@@ -19,7 +19,7 @@ class Previewer extends Component {
         {element}
       </div>
       <div id="scrollabletextbox-div-previewer">
-      <div placeholder="Enter your markdown code here" dangerouslySetInnerHTML={{__html: marked(this.props.store.input)}} className="scrollabletextbox-previewer" name="note">
+      <div id="preview" placeholder="Enter your markdown code here" dangerouslySetInnerHTML={{__html: marked(this.props.store.input)}} className="scrollabletextbox-previewer" name="note">
         
         </div>
       </div>

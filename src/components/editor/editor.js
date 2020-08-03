@@ -42,8 +42,8 @@ export default class editor extends Component {
           {element}
         </div>
         <div id="scrollabletextbox-div" className="scrollabletextbox-div-class">
-        <textarea onChange={this.handleChange} value={this.props.store.input}  placeholder="Enter your markdown code here" className="scrollabletextbox" name="note">
-          
+        <textarea id="editor" onChange={this.handleChange} placeholder="Enter your markdown code here" className="scrollabletextbox" name="note">
+        {this.props.store.input}
           </textarea>
         </div>
         

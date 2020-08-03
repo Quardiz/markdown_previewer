@@ -1,0 +1,63 @@
+$component-width: 40vw;
+
+.component-editor{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.scrollabletextbox {
+    border: none;
+    overflow-y: scroll;
+    width: 100%;
+}
+.scrollabletextbox-div-class {
+    display: flex;
+    justify-content: stretch;
+    border: solid 2px grey;
+    border-top: none;
+    width: $component-width;
+    height: 35vh;
+}
+.titlebars {
+    display: flex;
+    justify-content: space-between;
+    background-color: goldenrod;
+    width: $component-width;
+    border: solid 2px grey;
+    height: 4vh;
+}
+#edit-text {
+    margin: 10px 0 0 0;
+}
+#expand-arrows-icon{
+    width: 20px;
+    height: 20px;
+}
+.title-button{
+    margin: 0;
+    border: none;
+    background-color: transparent;
+    font-size: large;
+    outline: none;
+}
+
+.expanded-window {
+    width: 100%;
+    background-color: green;
+    height: 100vh;
+    display: flex;
+    justify-content: stretch;
+    border: solid 2px grey;
+    border-top: none;
+}
+
+.titlebars-expanded-window {
+    display: flex;
+    justify-content: space-between;
+    background-color: goldenrod;
+    border: solid 2px grey;
+    height: 4vh;
+    width: 100%;
+}

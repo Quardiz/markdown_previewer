@@ -1,0 +1,35 @@
+
+$component-width: 60vw;
+
+.component-previewer{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.scrollabletextbox-previewer {
+    border: none;
+    overflow-y: scroll;
+    width: 100%;
+}
+#scrollabletextbox-div-previewer {
+    display: flex;
+    justify-content: stretch;
+    border: solid 2px grey;
+    border-top: none;
+    width: $component-width;
+    min-height: 25vh;
+    max-height: 100vh;
+}
+#titlebar-previewer {
+    display: flex;
+    justify-content: space-between;
+    background-color: blueviolet;
+    width: $component-width;
+    border: solid 2px grey;
+    height: 4vh;
+}
+#previewer-title-text {
+    margin: 10px 0 0 0;
+}

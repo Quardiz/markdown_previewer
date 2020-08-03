@@ -1,12 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
-
+import Editor from './components/editor';
+import Previewer from './components/previewer';
+import { inputStore } from './inputStore'
+// const myEditor = <Editor/>;
+// const myPreviewer = <Previewer state={myEditor.state} />
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Editor store={inputStore}/>
+    <Previewer store={inputStore}/>
+    {/* {myEditor}
+    {myPreviewer} */}
   </React.StrictMode>,
   document.getElementById('root')
 );
